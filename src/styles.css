@@ -3,3 +3,12 @@ html, body, .container {
   background-color: #343a40 !important;
   color: white;
 }
+
+.navbar-brand {
+  color: whitesmoke !important;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
+}

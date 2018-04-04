@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProjectListComponent }  from './project-list/project-list.component';
 import { AddProjectComponent } from  './add-project/add-project.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 const appRoutes: Routes = [
   {
@@ -16,11 +17,11 @@ const appRoutes: Routes = [
   {
     path: 'addproject',
     component: AddProjectComponent
+  },
+  {
+    path: 'projects/:id',
+    component: ProjectDetailsComponent
   }
-  // {
-  //   path: 'albums/:id',
-  //   component: AdminComponent
-  // }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

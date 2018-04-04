@@ -10,6 +10,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./project-list.component.css'],
   providers: [ProjectService]
 })
+
 export class ProjectListComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
 
@@ -19,8 +20,8 @@ export class ProjectListComponent implements OnInit {
     this.projects = this.projectService.getProjects();
   }
 
-  // goToDetailPage(clickedAlbum: Album) {
-  //   this.router.navigate(['albums', clickedAlbum.id]);
-  // };
+  goToDetailPage(clickedProject) {
+    this.router.navigate(['projects', clickedProject.$key]);
+  };
 
 }
