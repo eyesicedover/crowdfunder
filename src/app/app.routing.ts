@@ -1,30 +1,24 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { WelcomeComponent } from './welcome/welcome.component';
-// import { AboutComponent }   from './about/about.component';
-// import { MarketplaceComponent} from  './marketplace/marketplace.component';
-// import { AlbumDetailComponent } from './album-detail/album-detail.component';
-// import { AdminComponent }   from './admin/admin.component';
+import { HomeComponent } from './home/home.component';
+import { ProjectListComponent }  from './project-list/project-list.component';
+import { AddProjectComponent } from  './add-project/add-project.component';
 
 const appRoutes: Routes = [
-  // {
-  //   path: '',
-  //   component: WelcomeComponent
-  // },
-  // {
-  //   path: 'about',
-  //   component: AboutComponent
-  // },
-  // {
-  //   path: 'marketplace',
-  //   component: MarketplaceComponent
-  // },
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'projects',
+    component: ProjectListComponent
+  },
+  {
+    path: 'addproject',
+    component: AddProjectComponent
+  }
   // {
   //   path: 'albums/:id',
-  //   component: AlbumDetailComponent
-  // },
-  // {
-  //   path: 'admin',
   //   component: AdminComponent
   // }
 ];

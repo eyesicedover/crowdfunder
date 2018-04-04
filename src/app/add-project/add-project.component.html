@@ -1,0 +1,21 @@
+<div class="card card-body">
+  <label for="">Enter Project Name</label>
+  <input type="text" #projName>
+
+  <label for="">Enter all Project Manager Names</label>
+  <input type="text" #managers>
+
+  <label for="">Describe Your Project</label>
+  <input type="text" #description>
+
+  <label for="">Enter Your Funding Goal</label>
+  <input type="text" #goal placeholder="$">
+
+  <label for="">Tell People How You Will Use Your Funds</label>
+  <input type="text" #use>
+
+  <label for="">Enter Project Rewards</label>
+  <input type="text" #rewards>
+
+  <button type="button" class="btn btn-outline-dark" (click)="submitProject(projName.value, managers.value, description.value, goal.value, use.value, rewards.value); projName.value=''; managers.value=''; description.value=''; goal.value=''; use.value=''; rewards.value='';">Post Project</button>
+</div>
